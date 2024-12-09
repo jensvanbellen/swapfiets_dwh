@@ -44,33 +44,9 @@ your_profile_name:
       path: ./dbt.duckdb
 ```
 
-### 4. Initialize the DuckDB Database
+### 4. Run dbt
 
-Run the provided script to create an empty DuckDB database:
-```bash
-python create_duckdb.py
-```
-
-### 5. Load Seed Data
-
-Load the CSV seed data into the database:
-```bash
-dbt seed
-```
-
-### 6. Run Models
-
-Execute all dbt models to generate the necessary tables:
-```bash
-dbt run
-```
-
-### 7. Run Tests
-
-Validate the models with dbt’s built-in tests:
-```bash
-dbt test
-```
+You can use dbt to create data models.
 
 ### Running on Windows
 
