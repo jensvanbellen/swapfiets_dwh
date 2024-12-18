@@ -2,6 +2,12 @@
 
 Welcome to my solution to the Swapfiets dbt case project. I cloned the [original repo](https://github.com/swapfiets-data/dbt-template) and added my changes in this personal repo.
 
+To get started:
+1. Add the Swapfiets CSV source files in the swapfiets_raw_data directory.
+2. Run the create_duckdb.py script to set up the database and populate it with source data.
+3. Run usual commands such as `dbt run` and `dbt test` to create and test my dbt models
+4. Run `dbt docs generate` and `dbt docs serve` to be able to read my documentation and check the lineage graph.
+
 Below I have included the original README for visibility:
 
 ---
