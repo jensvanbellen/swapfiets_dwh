@@ -1,3 +1,11 @@
+# Jens van Bellen's solution to the Swapfiets dbt Analytics Engineer Case Project
+
+Welcome to my solution to the Swapfiets dbt case project. I cloned the [original repo](https://github.com/swapfiets-data/dbt-template) and added my changes in this personal repo.
+
+Below I have included the original README for visibility:
+
+---
+
 # Swapfiets dbt Analytics Engineer Case Project
 
 Welcome to the Swapfiets dbt Analytics Engineer case project! This README provides step-by-step instructions for setting up and running the project.
