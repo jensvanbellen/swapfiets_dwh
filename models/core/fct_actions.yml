@@ -1,0 +1,101 @@
+version: 2
+
+models:
+  - name: fct_actions
+    description: A mapping of actions with associated metadata including country, asset, and customer information.
+    columns:
+      - name: action_id
+        description: A unique identifier for the action performed.
+        data_tests:
+          - unique:
+              name: fct_actions__action_id__unique
+              config:
+                severity: error
+          - not_null:
+              name: fct_actions__action_id__not_null
+              config:
+                severity: error
+      - name: action_type_code
+        description: A code representing the type of action performed.
+        data_tests:
+          - not_null:
+              name: fct_actions__action_type_code__not_null
+              config:
+                severity: warn
+      - name: action_type_name
+        description: The name or description of the action type. Possible actions are AssetCategoryChange, Exchange, FirstDelivery, LostKey, Missing, MissingAndEnd, NoBike, NoBikeAndEnd, OnSiteRepair, Pickup & Task.
+        data_tests:
+          - not_null:
+              name: fct_actions__action_type_name__not_null
+              config:
+                severity: warn
+      - name: created_on
+        description: The date and time when the action was created.
+        data_tests:
+          - not_null:
+              name: fct_actions__created_on__not_null
+              config:
+                severity: warn
+      - name: completed_on
+        description: The date and time when the action was completed.
+      - name: status_name
+        description: The current status of the action.
+        data_tests:
+          - not_null:
+              name: fct_actions__status_name__not_null
+              config:
+                severity: warn
+          - accepted_values:
+              name: fct_actions__status_name__accepted_values
+              values: [ 'New', 'Completed', 'Cancelled' ]
+              config:
+                severity: warn
+      - name: asset_id
+        description: The identifier for the asset involved in the action.
+        data_tests:
+          - not_null:
+              name: fct_actions__asset_id__not_null
+              config:
+                severity: warn
+      - name: subscription_id
+        description: The identifier for the subscription related to the action.
+        data_tests:
+          - not_null:
+              name: fct_actions__subscription_id__not_null
+              config:
+                severity: warn
+          - relationships:
+              name: fct_actions__subscription_id__relationship
+              to: ref('dim_subscriptions')
+              field: subscription_id
+              config:
+                severity: warn
+      - name: customer_id
+        description: The unique identifier for the customer associated with the action.
+        data_tests:
+          - not_null:
+              name: fct_actions__customer_id__not_null
+              config:
+                severity: warn
+          - relationships:
+              name: fct_actions__customer_id__relationship
+              to: ref('dim_customers')
+              field: customer_id
+              config:
+                severity: warn
+      - name: country
+        description: The country name representing the country associated with the action.
+      - name: country_code
+        description: Two letter country code.
+        data_tests:
+          - not_null:
+              name: fct_actions__country_code__not_null
+              config:
+                severity: warn
+      - name: load_date_time
+        description: The date and time when the data was loaded into the system.
+        data_tests:
+          - not_null:
+              name: fct_actions__load_date_time__not_null
+              config:
+                severity: warn

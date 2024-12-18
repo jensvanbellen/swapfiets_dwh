@@ -1,0 +1,104 @@
+version: 2
+
+models:
+  - name: mrt_enriched_customer_data
+    description: A data mart that combines customer and subscription data with recent swap actions. This view is optimized for performance by using a materialized view strategy.
+    columns:
+      - name: customer_id
+        description: A unique identifier for the customer.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__customer_id__not_null
+              config:
+                severity: error
+          - relationships:
+              name: enriched_customer_data__customer_id__relationship
+              to: ref('dim_customers')
+              field: customer_id
+              config:
+                severity: warn
+      - name: subscription_id
+        description: A unique identifier for the subscription.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__subscription_id__not_null
+              config:
+                severity: error
+          - relationships:
+              name: enriched_customer_data__subscription_id__relationship
+              to: ref('dim_subscriptions')
+              field: subscription_id
+              config:
+                severity: warn
+      - name: customer_has_active_subscription
+        description: Indicates whether the customer currently has an active subscription.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__customer_has_active_subscription__not_null
+              config:
+                severity: warn
+          - accepted_values:
+              name: enriched_customer_data__customer_has_active_subscription__accepted_values
+              values: [ 'true', 'false' ]
+              config:
+                severity: warn
+      - name: subscription_is_active_subscription
+        description: Indicates whether the subscription is currently active.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__subscription_is_active_subscription__not_null
+              config:
+                severity: warn
+          - accepted_values:
+              name: enriched_customer_data__subscription_is_active_subscription__accepted_values
+              values: [ 'true', 'false' ]
+              config:
+                severity: warn
+      - name: customer_country_code
+        description: The country code associated with the customer.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__customer_country_code__not_null
+              config:
+                severity: warn
+      - name: customer_language
+        description: The preferred language of the customer.
+      - name: customer_contact_id
+        description: Unique identifier for the customer's contact information.
+      - name: customer_created_on
+        description: The date when the customer was created in the system.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__customer_created_on__not_null
+              config:
+                severity: warn
+      - name: subscription_created_on
+        description: The date when the subscription was created.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__subscription_created_on__not_null
+              config:
+                severity: warn
+      - name: subscription_start
+        description: The start date of the subscription.
+        data_tests:
+          - not_null:
+              name: enriched_customer_data__subscription_start__not_null
+              config:
+                severity: warn
+      - name: subscription_end
+        description: The end date of the subscription.
+      - name: last_completed_swap_created_on
+        description: The date when the last swap action with completed status was created.
+      - name: last_completed_swap_completed_on
+        description: The date when the last swap action with completed status was completed.
+      - name: last_cancelled_swap_created_on
+        description: The date when the last swap action with cancelled status was created.
+      - name: last_cancelled_swap_completed_on
+        description: The date when the last swap action with cancelled status was completed.
+      - name: completed_number_of_swaps
+        description: The total number of swap actions performed by the customer, with a completed status.
+      - name: cancelled_number_of_swaps
+        description: The total number of swap actions performed by the customer, with a cancelled status.
+      - name: total_number_of_swaps
+        description: The total number of swap actions performed by the customer.

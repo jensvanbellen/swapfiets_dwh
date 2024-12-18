@@ -1,0 +1,18 @@
+version: 2
+
+seeds:
+  - name: dim_countries
+    description: A mapping of country codes, country names and additional information
+    columns:
+      - name: country_name
+        description: Full name of country.
+      - name: country_code
+        description: Two letter country code.
+      - name: three_letter_code
+        description: Three letter country code.
+      - name: numeric_code
+        description: Numeric country code (phone code).
+      - name: continent
+        description: Country's continent.
+      - name: country_capital_timezone
+        description: Country's capital city timezone name.

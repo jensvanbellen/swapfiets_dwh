@@ -1,8 +1,7 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_template'
+name: 'swapfiets_dwh'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
@@ -18,19 +17,38 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+# directories to be removed by `dbt clean`
+clean-targets:
   - "target"
   - "dbt_packages"
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
-# In this example config, we tell dbt to build all models in the example/
-# directory as views. These settings can be overridden in the individual model
-# files using the `{{ config(...) }}` macro.
 models:
-  dbt_template:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+  swapfiets_dwh:
+    +database: dbt
+    core:
+      +schema: core
+      +docs:
+        node_color: "blue"
+    data_marts:
+      +schema: data_marts
+      +docs:
+        node_color: "purple"
+
+seeds:
+  swapfiets_dwh:
+    +database: dbt
+    +schema: seeds
+    +docs:
+      node_color: "gold"
+    core:
+      dim_countries:
+        +column_types:
+          country_name: varchar
+          country_code: varchar
+          three_letter_code: varchar
+          numeric_code: integer
+          continent: varchar
+          country_capital_timezone: varchar

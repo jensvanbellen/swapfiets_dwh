@@ -1,0 +1,73 @@
+version: 2
+
+sources:
+  - name: core
+    database: dbt
+    schema: sources
+    tables:
+      - name: actions
+        columns:
+          - name: load_date_time
+            description: The date and time when the data was loaded into the system.
+          - name: country
+            description: The country name representing the country associated with the action.
+          - name: action_id
+            description: A unique identifier for the action performed.
+          - name: asset_id
+            description: The identifier for the asset involved in the action.
+          - name: customer_id
+            description: The unique identifier for the customer associated with the action.
+          - name: subscription_id
+            description: The identifier for the subscription related to the action.
+          - name: action_id_2
+            description: Duplicate of action_id, purpose TBD.
+          - name: created_on
+            description: The date and time when the action was created.
+          - name: completed_on
+            description: The date and time when the action was completed.
+          - name: action_type_code
+            description: A code representing the type of action performed.
+          - name: action_type_name
+            description: The name or description of the action type. Possible actions are AssetCategoryChange, Exchange, FirstDelivery, LostKey, Missing, MissingAndEnd, NoBike, NoBikeAndEnd, OnSiteRepair, Pickup & Task.
+          - name: status_name
+            description: The current status of the action.
+      - name: customers
+        columns:
+          - name: load_date_time
+            description: The date and time when the customer data was loaded into the system.
+          - name: customer_id
+            description: The unique identifier for the customer.
+          - name: contact_id
+            description: The identifier for the contact associated with the customer.
+          - name: created_on
+            description: The date and time when the customer record was created.
+          - name: last_updated_on
+            description: The date and time when the customer record was last updated.
+          - name: country
+            description: The country name associated with the customer.
+          - name: language
+            description: The preferred language of the customer.
+          - name: has_active_subscription
+            description: Indicates whether the customer has an active subscription (true/false).
+      - name: subscriptions
+        columns:
+          - name: load_date_time
+            description: The date and time when the subscription data was loaded into the system.
+          - name: country
+            description: The country name associated with the customer.
+          - name: subscription_created_on
+            description: The date and time the subscription was created.
+          - name: customer_created_on
+            description: The date and time the customer was created.
+          - name: customer_id
+            description: The unique identifier for the customer associated with the subscription.
+          - name: subscription_id
+            description: The unique identifier for the subscription.
+          - name: subscription_start
+            description: The date when the subscription started.
+          - name: subscription_end
+            description: The date when the subscription ended or is scheduled to end.
+          - name: subscription_type_id
+            description: The identifier for the type of subscription.
+          - name: is_active_subscription
+            description: Indicates whether the subscription is currently active (true/false).

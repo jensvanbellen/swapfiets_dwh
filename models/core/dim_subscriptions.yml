@@ -1,0 +1,88 @@
+version: 2
+
+models:
+  - name: dim_subscriptions
+    description: A table containing subscription information and metadata.
+    columns:
+      - name: subscription_id
+        description: The unique identifier for the subscription.
+        data_tests:
+          - unique:
+              name: dim_subscriptions__subscription_id__unique
+              config:
+                severity: error
+          - not_null:
+              name: dim_subscriptions__subscription_id__not_null
+              config:
+                severity: error
+      - name: subscription_type_id
+        description: The identifier for the type of subscription.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__subscription_type_id__not_null
+              config:
+                severity: warn
+      - name: subscription_created_on
+        description: The date and time the subscription was created.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__subscription_created_on__not_null
+              config:
+                severity: warn
+      - name: subscription_start
+        description: The date when the subscription started.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__subscription_start__not_null
+              config:
+                severity: warn
+      - name: subscription_end
+        description: The date when the subscription ended or is scheduled to end.
+      - name: is_active_subscription
+        description: Indicates whether the subscription is currently active (true/false).
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__is_active_subscription__not_null
+              config:
+                severity: warn
+          - accepted_values:
+              name: dim_subscriptions__is_active_subscription__accepted_values
+              values: [ 'true', 'false' ]
+              config:
+                severity: warn
+      - name: customer_id
+        description: The unique identifier for the customer associated with the subscription.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__customer_id__not_null
+              config:
+                severity: warn
+          - relationships:
+              name: dim_subscriptions__customer_id__relationship
+              to: ref('dim_customers')
+              field: customer_id
+              config:
+                severity: warn
+      - name: customer_created_on
+        description: The date and time the customer was created.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__customer_created_on__not_null
+              config:
+                severity: warn
+      - name: country
+        description: The country name associated with the customer.
+      - name: country_code
+        description: Two letter country code.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__country_code__not_null
+              config:
+                severity: warn
+      - name: load_date_time
+        description: The date and time when the subscription data was loaded into the system.
+        data_tests:
+          - not_null:
+              name: dim_subscriptions__load_date_time__not_null
+              config:
+                severity: warn

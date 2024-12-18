@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: A table containing customer information and metadata.
+    columns:
+      - name: customer_id
+        description: The unique identifier for the customer.
+        data_tests:
+          - unique:
+              name: dim_customers__customer_id__unique
+              config:
+                severity: error
+          - not_null:
+              name: dim_customers__customer_id__not_null
+              config:
+                severity: error
+      - name: contact_id
+        description: The identifier for the contact associated with the customer.
+      - name: created_on
+        description: The date and time when the customer record was created.
+        data_tests:
+          - not_null:
+              name: dim_customers__created_on__not_null
+              config:
+                severity: warn
+      - name: country
+        description: The country name associated with the customer.
+      - name: country_code
+        description: Two letter country code.
+        data_tests:
+          - not_null:
+              name: dim_customers__country_code__not_null
+              config:
+                severity: warn
+      - name: language
+        description: The preferred language of the customer.
+        data_tests:
+          - not_null:
+              name: dim_customers__language__not_null
+              config:
+                severity: warn
+      - name: has_active_subscription
+        description: Indicates whether the customer has an active subscription (true/false).
+        data_tests:
+          - not_null:
+              name: dim_customers__has_active_subscription__not_null
+              config:
+                severity: warn
+          - accepted_values:
+              name: dim_customers__has_active_subscription__accepted_values
+              values: [ 'true', 'false' ]
+              config:
+                severity: warn
+      - name: load_date_time
+        description: The date and time when the customer data was loaded into the system.
+        data_tests:
+          - not_null:
+              name: dim_customers__load_date_time__not_null
+              config:
+                severity: warn
+      - name: last_updated_on
+        description: The date and time when the customer record was last updated.
+        data_tests:
+          - not_null:
+              name: dim_customers__last_updated_on__not_null
+              config:
+                severity: warn

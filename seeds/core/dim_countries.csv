@@ -1,0 +1,250 @@
+country_name,country_code,three_letter_code,numeric_code,continent,country_capital_timezone
+Afghanistan,AF,AFG,4,Asia,Asia/Kabul
+Åland Islands,AX,ALA,248,Europe,Europe/Mariehamn
+Albania,AL,ALB,8,Europe,Europe/Tirane
+Algeria,DZ,DZA,12,Africa,Africa/Algiers
+American Samoa,AS,ASM,16,Oceania,Pacific/Pago_Pago
+Andorra,AD,AND,20,Europe,Europe/Andorra
+Angola,AO,AGO,24,Africa,Africa/Luanda
+Anguilla,AI,AIA,660,North America,America/Anguilla
+Antarctica,AQ,ATA,10,Antarctica,Antarctica/Vostok
+Antigua and Barbuda,AG,ATG,28,North America,America/Antigua
+Argentina,AR,ARG,32,South America,America/Argentina/Ushuaia
+Armenia,AM,ARM,51,Asia,Asia/Yerevan
+Aruba,AW,ABW,533,North America,America/Aruba
+Australia,AU,AUS,36,Oceania,Australia/Sydney
+Austria,AT,AUT,40,Europe,Europe/Vienna
+Azerbaijan,AZ,AZE,31,Asia,Asia/Baku
+Bahamas,BS,BHS,44,North America,America/Nassau
+Bahrain,BH,BHR,48,Asia,Asia/Bahrain
+Bangladesh,BD,BGD,50,Asia,Asia/Dhaka
+Barbados,BB,BRB,52,North America,America/Barbados
+Belarus,BY,BLR,112,Europe,Europe/Minsk
+Belgium,BE,BEL,56,Europe,Europe/Brussels
+Belize,BZ,BLZ,84,North America,America/Belize
+Benin,BJ,BEN,204,Africa,Africa/Porto-Novo
+Bermuda,BM,BMU,60,North America,Atlantic/Bermuda
+Bhutan,BT,BTN,64,Asia,Asia/Thimphu
+Bolivia,BO,BOL,68,South America,America/La_Paz
+Sint Eustatius and Saba Bonaire,BQ,BES,535,North America,America/Kralendijk
+Bosnia and Herzegovina,BA,BIH,70,Europe,Europe/Sarajevo
+Botswana,BW,BWA,72,Africa,Africa/Gaborone
+Bouvet Island,BV,BVT,74,South America,Unknown
+Brazil,BR,BRA,76,South America,America/Sao_Paulo
+British Indian Ocean Territory,IO,IOT,86,Africa,Indian/Chagos
+Brunei Darussalam,BN,BRN,96,Asia,Asia/Brunei
+Bulgaria,BG,BGR,100,Europe,Europe/Sofia
+Burkina Faso,BF,BFA,854,Africa,Africa/Ouagadougou
+Burundi,BI,BDI,108,Africa,Africa/Bujumbura
+Cabo Verde,CV,CPV,132,Africa,Atlantic/Cape_Verde
+Cambodia,KH,KHM,116,Asia,Asia/Phnom_Penh
+Cameroon,CM,CMR,120,Africa,Africa/Douala
+Canada,CA,CAN,124,North America,America/Toronto
+Cayman Islands,KY,CYM,136,North America,America/Cayman
+Central African Republic,CF,CAF,140,Africa,Africa/Bangui
+Chad,TD,TCD,148,Africa,Africa/Ndjamena
+Chile,CL,CHL,152,South America,America/Santiago
+China,CN,CHN,156,Asia,Asia/Urumqi
+Christmas Island,CX,CXR,162,Oceania,Indian/Christmas
+Cocos Islands,CC,CCK,166,Oceania,Indian/Cocos
+Colombia,CO,COL,170,South America,America/Bogota
+Comoros,KM,COM,174,Africa,Indian/Comoro
+Congo,CG,COG,178,Africa,Africa/Brazzaville
+Congo,CD,COD,180,Africa,Africa/Lubumbashi
+Cook Islands,CK,COK,184,Oceania,Pacific/Rarotonga
+Costa Rica,CR,CRI,188,North America,America/Costa_Rica
+Côte d'Ivoire,CI,CIV,384,Africa,Africa/Abidjan
+Croatia,HR,HRV,191,Europe,Europe/Zagreb
+Cuba,CU,CUB,192,North America,America/Havana
+Curaçao,CW,CUW,531,North America,America/Curacao
+Cyprus,CY,CYP,196,Asia,Asia/Famagusta
+Czechia,CZ,CZE,203,Europe,Europe/Prague
+Denmark,DK,DNK,208,Europe,Europe/Copenhagen
+Djibouti,DJ,DJI,262,Africa,Africa/Djibouti
+Dominica,DM,DMA,212,North America,America/Dominica
+Dominican Republic,DO,DOM,214,North America,America/Santo_Domingo
+Ecuador,EC,ECU,218,South America,Pacific/Galapagos
+Egypt,EG,EGY,818,Africa,Africa/Cairo
+El Salvador,SV,SLV,222,North America,America/El_Salvador
+Equatorial Guinea,GQ,GNQ,226,Africa,Africa/Malabo
+Eritrea,ER,ERI,232,Africa,Africa/Asmara
+Estonia,EE,EST,233,Europe,Europe/Tallinn
+Eswatini,SZ,SWZ,748,Africa,Africa/Mbabane
+Ethiopia,ET,ETH,231,Africa,Africa/Addis_Ababa
+Falkland Islands,FK,FLK,238,South America,Atlantic/Stanley
+Faroe Islands,FO,FRO,234,Europe,Atlantic/Faroe
+Fiji,FJ,FJI,242,Oceania,Pacific/Fiji
+Finland,FI,FIN,246,Europe,Europe/Helsinki
+France,FR,FRA,250,Europe,Europe/Paris
+French Guiana,GF,GUF,254,South America,America/Cayenne
+French Polynesia,PF,PYF,258,Oceania,Pacific/Gambier
+French Southern Territories,TF,ATF,260,Africa,Indian/Kerguelen
+Gabon,GA,GAB,266,Africa,Africa/Libreville
+Gambia,GM,GMB,270,Africa,Africa/Banjul
+Georgia,GE,GEO,268,Asia,Asia/Tbilisi
+Germany,DE,DEU,276,Europe,Europe/Busingen
+Ghana,GH,GHA,288,Africa,Africa/Accra
+Gibraltar,GI,GIB,292,Europe,Europe/Gibraltar
+Greece,GR,GRC,300,Europe,Europe/Athens
+Greenland,GL,GRL,304,North America,America/Thule
+Grenada,GD,GRD,308,North America,America/Grenada
+Guadeloupe,GP,GLP,312,North America,America/Guadeloupe
+Guam,GU,GUM,316,Oceania,Pacific/Guam
+Guatemala,GT,GTM,320,North America,America/Guatemala
+Guernsey,GG,GGY,831,Europe,Europe/Guernsey
+Guinea,GN,GIN,324,Africa,Africa/Conakry
+Guinea-Bissau,GW,GNB,624,Africa,Africa/Bissau
+Guyana,GY,GUY,328,South America,America/Guyana
+Haiti,HT,HTI,332,North America,America/Port-au-Prince
+Heard Island and McDonald Islands,HM,HMD,334,Oceania,Unknown
+Holy See,VA,VAT,336,Europe,Europe/Vatican
+Honduras,HN,HND,340,North America,America/Tegucigalpa
+Hong Kong,HK,HKG,344,Asia,Asia/Hong_Kong
+Hungary,HU,HUN,348,Europe,Europe/Budapest
+Iceland,IS,ISL,352,Europe,Atlantic/Reykjavik
+India,IN,IND,356,Asia,Asia/Kolkata
+Indonesia,ID,IDN,360,Asia,Asia/Jakarta
+Iran,IR,IRN,364,Asia,Asia/Tehran
+Iraq,IQ,IRQ,368,Asia,Asia/Baghdad
+Ireland,IE,IRL,372,Europe,Europe/Dublin
+Isle of Man,IM,IMN,833,Europe,Europe/Isle_of_Man
+Israel,IL,ISR,376,Asia,Asia/Jerusalem
+Italy,IT,ITA,380,Europe,Europe/Rome
+Jamaica,JM,JAM,388,North America,America/Jamaica
+Japan,JP,JPN,392,Asia,Asia/Tokyo
+Jersey,JE,JEY,832,Europe,Europe/Jersey
+Jordan,JO,JOR,400,Asia,Asia/Amman
+Kazakhstan,KZ,KAZ,398,Asia,Asia/Oral
+Kenya,KE,KEN,404,Africa,Africa/Nairobi
+Kiribati,KI,KIR,296,Oceania,Pacific/Kiritimati
+North Korea,KP,PRK,408,Asia,Asia/Pyongyang
+South Korea,KR,KOR,410,Asia,Asia/Seoul
+Kuwait,KW,KWT,414,Asia,Asia/Kuwait
+Kyrgyzstan,KG,KGZ,417,Asia,Asia/Bishkek
+Lao People's Democratic Republic,LA,LAO,418,Asia,Asia/Vientiane
+Latvia,LV,LVA,428,Europe,Europe/Riga
+Lebanon,LB,LBN,422,Asia,Asia/Beirut
+Lesotho,LS,LSO,426,Africa,Africa/Maseru
+Liberia,LR,LBR,430,Africa,Africa/Monrovia
+Libya,LY,LBY,434,Africa,Africa/Tripoli
+Liechtenstein,LI,LIE,438,Europe,Europe/Vaduz
+Lithuania,LT,LTU,440,Europe,Europe/Vilnius
+Luxembourg,LU,LUX,442,Europe,Europe/Luxembourg
+Macao,MO,MAC,446,Asia,Asia/Macau
+Madagascar,MG,MDG,450,Africa,Indian/Antananarivo
+Malawi,MW,MWI,454,Africa,Africa/Blantyre
+Malaysia,MY,MYS,458,Asia,Asia/Kuching
+Maldives,MV,MDV,462,Asia,Indian/Maldives
+Mali,ML,MLI,466,Africa,Africa/Bamako
+Malta,MT,MLT,470,Europe,Europe/Malta
+Marshall Islands,MH,MHL,584,Oceania,Pacific/Kwajalein
+Martinique,MQ,MTQ,474,North America,America/Martinique
+Mauritania,MR,MRT,478,Africa,Africa/Nouakchott
+Mauritius,MU,MUS,480,Africa,Indian/Mauritius
+Mayotte,YT,MYT,175,Africa,Indian/Mayotte
+Mexico,MX,MEX,484,North America,America/Mexico_City
+Micronesia,FM,FSM,583,Oceania,Pacific/Kosrae
+Moldova,MD,MDA,498,Europe,Europe/Chisinau
+Monaco,MC,MCO,492,Europe,Europe/Monaco
+Mongolia,MN,MNG,496,Asia,Asia/Choibalsan
+Montenegro,ME,MNE,499,Europe,Europe/Podgorica
+Montserrat,MS,MSR,500,North America,America/Montserrat
+Morocco,MA,MAR,504,Africa,Africa/Casablanca
+Mozambique,MZ,MOZ,508,Africa,Africa/Maputo
+Myanmar,MM,MMR,104,Asia,Asia/Yangon
+Namibia,NA,NAM,516,Africa,Africa/Windhoek
+Nauru,NR,NRU,520,Oceania,Pacific/Nauru
+Nepal,NP,NPL,524,Asia,Asia/Kathmandu
+The Netherlands,NL,NLD,528,Europe,Europe/Amsterdam
+New Caledonia,NC,NCL,540,Oceania,Pacific/Noumea
+New Zealand,NZ,NZL,554,Oceania,Pacific/Auckland
+Nicaragua,NI,NIC,558,North America,America/Managua
+Niger,NE,NER,562,Africa,Africa/Niamey
+Nigeria,NG,NGA,566,Africa,Africa/Lagos
+Niue,NU,NIU,570,Oceania,Pacific/Niue
+Norfolk Island,NF,NFK,574,Oceania,Pacific/Norfolk
+Republic of North Macedonia,MK,MKD,807,Europe,Europe/Skopje
+Northern Mariana Islands,MP,MNP,580,Oceania,Pacific/Saipan
+Norway,NO,NOR,578,Europe,Europe/Oslo
+Oman,OM,OMN,512,Asia,Asia/Muscat
+Pakistan,PK,PAK,586,Asia,Asia/Karachi
+Palau,PW,PLW,585,Oceania,Pacific/Palau
+State of Palestine,PS,PSE,275,Asia,Asia/Hebron
+Panama,PA,PAN,591,North America,America/Panama
+Papua New Guinea,PG,PNG,598,Oceania,Pacific/Bougainville
+Paraguay,PY,PRY,600,South America,America/Asuncion
+Peru,PE,PER,604,South America,America/Lima
+Philippines,PH,PHL,608,Asia,Asia/Manila
+Pitcairn,PN,PCN,612,Oceania,Pacific/Pitcairn
+Poland,PL,POL,616,Europe,Europe/Warsaw
+Portugal,PT,PRT,620,Europe,Atlantic/Azores
+Puerto Rico,PR,PRI,630,North America,America/Puerto_Rico
+Qatar,QA,QAT,634,Asia,Asia/Qatar
+Réunion,RE,REU,638,Africa,Indian/Reunion
+Romania,RO,ROU,642,Europe,Europe/Bucharest
+Russian Federation,RU,RUS,643,Europe,Europe/Moscow
+Rwanda,RW,RWA,646,Africa,Africa/Kigali
+Saint Barthélemy,BL,BLM,652,North America,America/St_Barthelemy
+Ascension and Tristan da Cunha Saint Helena,SH,SHN,654,Africa,Atlantic/St_Helena
+Saint Kitts and Nevis,KN,KNA,659,North America,America/St_Kitts
+Saint Lucia,LC,LCA,662,North America,America/St_Lucia
+Saint Martin,MF,MAF,663,North America,America/Marigot
+Saint Pierre and Miquelon,PM,SPM,666,North America,America/Miquelon
+Saint Vincent and the Grenadines,VC,VCT,670,North America,America/St_Vincent
+Samoa,WS,WSM,882,Oceania,Pacific/Apia
+San Marino,SM,SMR,674,Europe,Europe/San_Marino
+Sao Tome and Principe,ST,STP,678,Africa,Africa/Sao_Tome
+Saudi Arabia,SA,SAU,682,Asia,Asia/Riyadh
+Senegal,SN,SEN,686,Africa,Africa/Dakar
+Serbia,RS,SRB,688,Europe,Europe/Belgrade
+Seychelles,SC,SYC,690,Africa,Indian/Mahe
+Sierra Leone,SL,SLE,694,Africa,Africa/Freetown
+Singapore,SG,SGP,702,Asia,Asia/Singapore
+Sint Maarten,SX,SXM,534,North America,America/Lower_Princes
+Slovakia,SK,SVK,703,Europe,Europe/Bratislava
+Slovenia,SI,SVN,705,Europe,Europe/Ljubljana
+Solomon Islands,SB,SLB,90,Oceania,Pacific/Guadalcanal
+Somalia,SO,SOM,706,Africa,Africa/Mogadishu
+South Africa,ZA,ZAF,710,Africa,Africa/Johannesburg
+South Georgia and the South Sandwich Islands,GS,SGS,239,South America,Atlantic/South_Georgia
+South Sudan,SS,SSD,728,Africa,Africa/Juba
+Spain,ES,ESP,724,Europe,Europe/Madrid
+Sri Lanka,LK,LKA,144,Asia,Asia/Colombo
+Sudan,SD,SDN,729,Africa,Africa/Khartoum
+Suriname,SR,SUR,740,South America,America/Paramaribo
+Svalbard and Jan Mayen,SJ,SJM,744,Europe,Arctic/Longyearbyen
+Sweden,SE,SWE,752,Europe,Europe/Stockholm
+Switzerland,CH,CHE,756,Europe,Europe/Zurich
+Syrian Arab Republic,SY,SYR,760,Asia,Asia/Damascus
+Taiwan,TW,TWN,158,Asia,Asia/Taipei
+Tajikistan,TJ,TJK,762,Asia,Asia/Dushanbe
+United Republic of Tanzania,TZ,TZA,834,Africa,Africa/Dar_es_Salaam
+Thailand,TH,THA,764,Asia,Asia/Bangkok
+Timor-Leste,TL,TLS,626,Asia,Asia/Dili
+Togo,TG,TGO,768,Africa,Africa/Lome
+Tokelau,TK,TKL,772,Oceania,Pacific/Fakaofo
+Tonga,TO,TON,776,Oceania,Pacific/Tongatapu
+Trinidad and Tobago,TT,TTO,780,North America,America/Port_of_Spain
+Tunisia,TN,TUN,788,Africa,Africa/Tunis
+Turkey,TR,TUR,792,Asia,Europe/Istanbul
+Turkmenistan,TM,TKM,795,Asia,Asia/Ashgabat
+Turks and Caicos Islands,TC,TCA,796,North America,America/Grand_Turk
+Tuvalu,TV,TUV,798,Oceania,Pacific/Funafuti
+Uganda,UG,UGA,800,Africa,Africa/Kampala
+Ukraine,UA,UKR,804,Europe,Europe/Kyiv
+United Arab Emirates,AE,ARE,784,Asia,Asia/Dubai
+United Kingdom,GB,GBR,826,Europe,Europe/London
+United States of America,US,USA,840,North America,America/New_York
+United States Minor Outlying Islands,UM,UMI,581,Oceania,Pacific/Wake
+Uruguay,UY,URY,858,South America,America/Montevideo
+Uzbekistan,UZ,UZB,860,Asia,Asia/Tashkent
+Vanuatu,VU,VUT,548,Oceania,Pacific/Efate
+Venezuela,VE,VEN,862,South America,America/Caracas
+Viet Nam,VN,VNM,704,Asia,Asia/Ho_Chi_Minh
+Virgin Islands (British),VG,VGB,92,North America,America/Tortola
+Virgin Islands (U.S.),VI,VIR,850,North America,America/St_Thomas
+Wallis and Futuna,WF,WLF,876,Oceania,Pacific/Wallis
+Western Sahara,EH,ESH,732,Africa,Africa/El_Aaiun
+Yemen,YE,YEM,887,Asia,Asia/Aden
+Zambia,ZM,ZMB,894,Africa,Africa/Lusaka
+Zimbabwe,ZW,ZWE,716,Africa,Africa/Harare
